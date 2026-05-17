@@ -12,7 +12,7 @@ class Main {
         println("Connected to DBUS")
         val nm = conn.getRemoteObject(
             "org.freedesktop.NetworkManager",
-            "org/freedesktop/NetworkManager",
+            "/org/freedesktop/NetworkManager",
             NetworkManager::class.java
         )
 

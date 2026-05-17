@@ -7,7 +7,7 @@ fun main() = Main().run()
 
 class Main {
     fun run() {
-        val conn: DBusConnection = DBusConnectionBuilder.forSessionBus().build()
+        val conn: DBusConnection = DBusConnectionBuilder.forSystemBus().build()
         conn.connect()
         println("Connected to DBUS")
         val nm = conn.getRemoteObject(
